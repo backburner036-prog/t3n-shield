@@ -19,7 +19,9 @@ butuh ADOPSI NYATA (credits di banyak DID unik), bukan sekadar demo.
       **BLOKIR r2: `T3N_API_KEY` belum ada di VM; klaim butuh sign-in email
       di https://www.terminal3.io/claim-page — langkah IDR/browser.**
 - [ ] Klaim test credits sandbox (20.000 credits, testnet) — ikut blokir di atas.
-- [ ] Buat repo GitHub `backburner036-prog/t3n-shield` + push fondasi ini.
+- [x] Buat repo GitHub `backburner036-prog/t3n-shield` + push fondasi ini.
+      SELESAI 23 Nov 2026 r2: https://github.com/backburner036-prog/t3n-shield
+      (commit 2eda7e2).
 - [x] Tulis kontrak TEE pertama (Rust→WASM): `contracts/pii-shield`
       (vault store/check/forget + fungsi baru `redact`); 14/14 test lolos;
       WASM 250.334 byte, SHA-256 tercatat di `traction/dashboard.md`.
