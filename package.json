@@ -1,0 +1,24 @@
+{
+  "name": "t3n-shield",
+  "version": "0.1.0",
+  "description": "PII-redacting delegated agent gateway on Terminal 3 Developer Platform (T3N) — Terminal 3 Build+Scale Agent Micro Grant",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "quickstart": "tsx src/quickstart.ts",
+    "deploy": "tsx src/deploy.ts",
+    "deploy:register": "tsx src/deploy.ts --register",
+    "demo": "tsx src/demo-local.ts",
+    "demo:live": "tsx src/demo-live.ts",
+    "typecheck": "tsc --noEmit",
+    "contract:test": "cargo test --release --manifest-path contracts/pii-shield/Cargo.toml",
+    "contract:build": "cargo build --target wasm32-wasip2 --release --manifest-path contracts/pii-shield/Cargo.toml"
+  },
+  "dependencies": {
+    "@terminal3/t3n-sdk": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest"
+  }
+}
